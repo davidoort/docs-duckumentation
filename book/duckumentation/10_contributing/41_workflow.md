@@ -76,6 +76,12 @@ Re-compile from scratch using:
 
 If there are errors you should open `duckuments-dist/errors.html` and look at them and fix them.
 
+If you run into a permission issue of the form `PermissionError(13, 'Permission denied')'`. Try running:
+    
+    $ sudo chmod 666 /var/run/docker.sock
+    
+and now the error should disappear when you run the build command again.
+
 ### Look at the local copy
 
 Open the file `index.html` and navigate to whichever pages you have changed to make sure that they look the way want them to.
